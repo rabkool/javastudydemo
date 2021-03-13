@@ -15,7 +15,7 @@ public class DataService {
      * 导入
      *
      * @param data 参数封装
-     * @return Result
+     * @return data
      */
     public Data dataImport(Data data) {
         return data;
@@ -25,7 +25,7 @@ public class DataService {
      * 导出
      *
      * @param data 参数封装
-     * @return Result
+     * @return result
      */
     public Result dataOutPut(Data data) {
         Result result = new Result();

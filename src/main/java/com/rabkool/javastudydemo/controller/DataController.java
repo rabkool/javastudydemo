@@ -19,7 +19,7 @@ public class DataController {
      * 导入
      *
      * @param data 参数封装
-     * @return Result
+     * @return Data
      */
     @PostMapping(value = "/dataImport")
     public Data dataImport(Data data) {

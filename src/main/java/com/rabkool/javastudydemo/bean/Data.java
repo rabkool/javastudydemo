@@ -71,7 +71,6 @@ public class Data {
     @Override
     public String toString() {
         System.out.println("123123123");
-
         return serverName + databaseName + userId + passWord + boatNumber + fileAddress1 + fileAddress2;
     }
 }
