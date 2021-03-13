@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<script>
+    function dataImport() {
+        document.data.action = "/dataImport";
+        document.data.submit();
+    }
+
+    function dataOutPut() {
+        document.data.action = "/dataOutPut";
+        document.data.submit();
+    }
+</script>
+<body>
+<div>
+    <form name="data" method="post">
+        <div>
+            <div>
+                サーバ名:<input name="serverName" type="text"/>
+            </div>
+            <div>
+                データベース名:<input name="databaseName" type="text"/>
+            </div>
+            <div>
+                ユーザーID:<input name="userId" type="text"/>
+            </div>
+            <div>
+                パスワード:<input name="passWord" type="password"/>
+            </div>
+            <div>
+                ボート番号:<input name="boatNumber" type="text"/>
+            </div>
+
+            <div>
+                入力<input name="fileAddress1" type="file"/>
+                <input type="button" name="btn1" value="導入" onclick="dataImport();">
+            </div>
+            <div>
+                出力<input name="fileAddress2" type="file"/>
+                <input type="button" name="btn2" value="導出" onclick="dataOutPut();">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
