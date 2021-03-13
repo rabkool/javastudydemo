@@ -29,6 +29,7 @@ public class DataService {
      */
     public Result dataOutPut(Data data) {
         Result result = new Result();
+
         result.setSuccess(false);
         result.setDetail(null);
         try {
